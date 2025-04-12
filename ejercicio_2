@@ -1,0 +1,33 @@
+class Punto: 
+    def __init__ (self, x, y):
+        self.x = x 
+        self.y = y
+    
+    def eje_x(self):
+        return self.x 
+        
+    def eje_y(self): 
+        return self.y
+        
+    def impresion(self):
+        return f"({self.x}, {self.y})"
+        
+    def opuesto(self): 
+        return Punto(-self.x, -self.y)
+    
+    def origen(self): 
+        return self.x ==0 and self.y==0 
+        
+punto1 = Punto(5,6) 
+punto2 = Punto(0,0)
+
+print("Punto 1:", punto1.impresion())
+print("Punto 2:", punto2.impresion())
+print("Eje X de punto1:", punto1.eje_x())
+print("Eje Y de punto1:", punto1.eje_y())
+print("Punto opuesto de punto1:", punto1.opuesto().impresion())
+    
+    
+        
+    
+
