@@ -1,4 +1,3 @@
-# unab_pa_tp_3
 # T1: Taller de Programación Orientada a Objetos
 ## 🎯 Objetivos a cumplir por los estudiantes
 
