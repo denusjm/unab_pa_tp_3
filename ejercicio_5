@@ -1,0 +1,83 @@
+
+class Persona: 
+    def __init__(self, nombre, apellido): 
+        self.nombre = nombre 
+        self.apellido = apellido
+        
+    def __str__(self):
+        return f"{self.apellido}, {self.nombre}" 
+        
+class Libro: 
+    def __init__(self, titulo, autor, isbn, paginas, edicion, editorial, ciudad, pais, fecha): 
+        self.titulo = titulo
+        self.autor = autor 
+        self.isbn = isbn 
+        self.paginas = paginas 
+        self.edicion = edicion 
+        self.editorial = editorial 
+        self.ciudad = ciudad 
+        self.pais = pais 
+        self.fecha = fecha 
+    
+    def get_titulo(self): 
+        return self.titulo 
+    def get_autor(self): 
+        return self.autor 
+    def get_isbn(self):
+        return self.isbn 
+    def get_paginas(self): 
+        return self.paginas 
+    def get_edicion(self):
+        return self.edicion 
+    def get_editorial(self): 
+        return self.editorial 
+    def get_ciudad(self): 
+        return self.ciudad 
+    def get_pais(self):
+        return self.pais 
+    def get_fecha(self):
+        return self.fecha 
+        
+    def set_titulo(self, titulo):
+        self.titulo = titulo 
+    def set_autor(self, autor): 
+        self.autor = autor
+    def set_isbn(self, isbn):
+        self.isbn = isbn
+    def set_paginas(self, paginas): 
+        self.paginas = paginas
+    def set_edicion(self, edicion): 
+        self.edicion = edicion
+    def set_editorial(self, editorial): 
+        self.editorial = editorial
+    def set_ciudad(self, ciudad): 
+        self.ciudad = ciudad
+    def set_pais(self, pais): 
+        self.pais = pais
+    def set_fecha(self, fecha): 
+        self.fecha = fecha
+        
+    def mostrar_informacion(self):
+        print(f"Título: {self.titulo} {self.edicion} edición")
+        print(f"Autor: {self.autor}")
+        print(f"ISBN: {self.isbn}")
+        print(f"{self.editorial}, {self.ciudad} ({self.pais})")
+        print(self.fecha)
+        print(f"{self.paginas} página{'s' if self.paginas != 1 else ''}")
+        
+autor = Persona("Y. Daniel", "Liang")
+libro = Libro(
+    titulo="Introduction to Java Programming",
+    autor=autor,
+    isbn="0-13-031997-X",
+    paginas=784,
+    edicion="3a",
+    editorial="Prentice-Hall",
+    ciudad="New Jersey",
+    pais="USA",
+    fecha="viernes 16 de noviembre de 2001"
+)
+
+libro.mostrar_informacion()
+
+
